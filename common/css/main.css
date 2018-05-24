@@ -1,0 +1,373 @@
+/*Estilos generales*/
+a:focus, a:hover{
+  text-decoration: underline !Important;
+}
+
+/*Estilos del footer*/
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  margin-bottom: 60px;
+  background-color: #EEEEEE;
+}
+.footer-superior {
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
+  color: white;
+  height: 150px;
+}
+.f-superior{
+  background-color: #393E46;
+  height: 150px;
+}
+.footer-inferior {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 40px;
+}
+.f-inferior{
+  background-color: #222831;
+  height: 40px;
+}
+.btn-social{
+  width: 25%;
+  text-align: center;
+  margin-left: 0px !Important;
+  margin-top: 5px;
+}
+.btn-social:hover, .btn-social:focus{
+  background-color: #00ADB5;
+}
+.btn-social a{
+  color: white;
+  font-size: 22px;
+}
+.contacto-enlace{
+  color: white;
+  word-break: break-all;
+}
+.contacto-enlace:hover, .contacto-enlace:focus{
+  color: white;
+}
+.img-footer{
+      width: 40%;
+    margin-top: 5%;
+}
+
+/*Estilos de imágenes*/
+.img-logo{
+    width: 250px;
+}
+
+/*Estilos de la barra superior*/
+.contenedor-superior{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.navbar-iap{
+    background-color: #393E46;
+    border-color: #393E46;
+    border-radius: 0px;
+}
+.navbar{
+  margin-bottom: 0px;
+  border: 0px;
+}
+.navbar-iap a{
+  color: white;
+}
+.navbar-menu-iap > li > a:hover, .navbar-menu-iap > li > a:focus{
+  background-color: #00ADB5;
+}
+
+.navbar-menu-iap > li.active{
+  background-color: #00ADB5;
+}
+
+/*Carrusel*/
+.img-carrusel{
+  height: 450px;
+  width: 100%;
+  display: none;
+}
+.carrusel-active{
+  display: block;
+}
+
+.btn-carrusel:hover, .btn-carrusel:focus{
+      background-color: #00ADB5;
+      text-decoration: underline;
+      color: white;
+}
+.btn-carrusel{
+  background: transparent;
+  border-radius: 0px;
+  border: none;
+}
+.btn-carrusel:not(:last-child){
+  border-right: 1px solid gray;
+  
+}
+
+.contenedor-btn-carrusel{
+  padding-bottom: 0%;
+  background: #393e46;
+  color: white;
+}
+/*carrusel*/
+
+.contenido_carrusel{
+  display:block;
+}
+.contenido_carrusel.oculto{
+  display:none;
+}
+
+.contenido_carrusel_imagen{
+  display:block;
+}
+.contenido_carrusel_imagen.oculto{
+  display:none;
+}
+.imagen_carrusel{
+  height: 450px;
+  width: 100%;
+}
+
+/*
+.paginacion_carrusel > .activo > a,
+.paginacion_carrusel > .activo > a:hover,
+.paginacion_carrusel > .activo > a:focus {
+  padding-bottom: 0%;
+  background: #393e46;
+  color: white;
+}*/
+a.numero_carrusel{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.paginacion_carrusel>li.activo{
+  background-color: #00ADB5;
+  text-decoration: underline;
+  color: white;
+}
+
+.paginacion_carrusel > li:hover, 
+.paginacion_carrusel > li:focus{
+      background-color: #00ADB5;
+      text-decoration: underline;
+      color: white;
+}
+
+.paginacion_carrusel > li:hover, 
+.paginacion_carrusel > li:focus{
+      background-color: #00ADB5;
+      text-decoration: underline;
+      color: white;
+}
+
+.paginacion_carrusel > li{
+  display: inline-block;
+  background: transparent;
+  border-radius: 0px;
+  border: none;
+  padding: 6px 12px;
+  list-style: none;
+}
+.paginacion_carrusel > li:not(:last-child){
+  border-right: 1px solid gray;
+}
+
+.paginacion_carrusel > li > a{
+  color: white;
+}
+
+.paginacion_carrusel{
+  padding-bottom: 0%;
+  background: #393e46;
+  color: white;
+  list-style: none;
+  width: 100%;
+}
+.contenedor_navegador_contenido_imagen{
+  background-color: #393e46;
+  padding-bottom: 0%;
+  color: white;
+}
+.contenedor_navegador_carrusel_imagen{
+  padding: 0;
+}
+.active{
+  background-color: #00ADB5;
+  text-decoration: underline;
+  color: white;
+}
+
+/*paginacion carrusel*/
+
+/*
+
+.paginacion_carrusel {
+  padding-left: 0;
+  margin: 20px 0;
+  border-radius: 4px;
+  width: 100%;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+
+  padding-bottom: 0%;
+  background: #393e46;
+  color: white;
+}
+
+.paginacion_carrusel > li > a{
+  position: relative;
+  float: left;
+  padding: 6px 12px;
+  margin-left: -1px;
+  line-height: 0.9;
+  text-decoration: none; 
+
+  padding-bottom: 0%;
+  background: #393e46;
+  color: white;
+}
+
+.paginacion_carrusel > li:first-child > a {
+  margin-left: 0;
+}
+.paginacion_carrusel > li:last-child > a {
+}
+.paginacion_carrusel > li > a:hover,
+.paginacion > li > a:focus {
+  background-color: #00ADB5;
+  text-decoration: underline;
+  color: white;
+}
+.paginacion_carrusel > .activo > a,
+.paginacion_carrusel > .activo > a:hover,
+.paginacion_carrusel > .activo > a:focus {
+  padding-bottom: 0%;
+  background: #393e46;
+  color: white;
+}
+
+.paginacion_carrusel > .inactivo > a,
+.paginacion_carrusel > .inactivo > a:hover,
+.paginacion_carrusel > .inactivo > a:focus {
+  padding-bottom: 0%;
+  background: #393e46;
+  color: white;
+}*/
+
+/*fin paginacion carrusel*/
+
+/*Contenido general*/
+.cont-white{
+  background: white;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+.contenido-principal > .cont-white{
+  margin-bottom: 190px;
+  padding-bottom: 80px;
+}
+.img-lateral{
+  width: 50%;
+}
+.title_white{
+  color: white;
+  margin-bottom: 15px;
+}
+.contenedor-letras{
+  padding-right: 0px;
+  margin-top: 15px;
+}
+.btn-letra{
+      background-color: #393E46;
+      border-radius: 0px;
+      color: white;
+      width: 80px;
+}
+.btn-letra:hover, .btn-letra:focus{
+  color: white;
+  text-decoration: underline;
+  background-color: #00ADB5;  
+}
+
+.contenedor-deportes{
+  background-color: #393e46;
+    padding-bottom: 5%;
+}
+.contenedor-organizacion{
+  padding-bottom: 5%;
+}
+.contenedor-alianzas{
+  padding-bottom: 8%;
+}
+.contenedor-donativos{
+  padding-bottom:2%;
+  padding-top: 2%;
+  background: #00ADB5;
+}
+.contenedor-donativos h3{
+  color: white;
+  margin-top:10px;
+}
+.contenedor-donativos .btn{
+  width: 250px;
+    height: 50px;
+    border-radius: 0px;
+    background: white;
+    padding-top: 3%;
+    font-size: 16px;
+    color: black;
+}
+.contenedor-donativos .btn:focus, .contenedor-donativos .btn:hover{
+    text-decoration: underline;
+}
+.img-deportes{
+  height: 250px;
+  width: 100%;
+}
+.separador{
+  margin-top: 20px;
+}
+.img-servicio-access{
+  background-image: url(../../img/moto.jpg);
+      background-size: cover;
+      height: 250px;
+      color: white;
+      padding-top: 15%;
+      display: block;
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+}
+.img-servicio-access:hover, .img-servicio-access:focus{
+      color: white;
+      -webkit-filter: grayscale(0%);
+      filter: grayscale(0%);
+}
+.img-servicio-access>h2{
+  background: #393e46ed;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.content-cita{
+  border-left: 4px solid #00ADB5;
+  margin-top: 15px;
+}
+
+/*Páginas extra*/
+.img-top{
+  height: 350px;
+  width: 100%;
+}
