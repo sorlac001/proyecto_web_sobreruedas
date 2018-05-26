@@ -1,3 +1,17 @@
+<!DOCTYPE html>    
+	<!-- Bootstrap core CSS -->
+    <link href="common/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font awesome -->
+    <link href="common/css/fa-svg-with-js.css" rel="stylesheet">
+
+    <link href="common/css/main.css" rel="stylesheet">
+
+    <!-- Script de FontAwesome -->
+    <script src="common/js/fontawesome-all.min.js"></script>
+  </head>
+
+<body>
 <?php
 session_start();
 include "conexion.php";
@@ -72,8 +86,5 @@ if($_SESSION['tipo']=='admin'){
 	}	
 
 }
-
-	
-
-
 ?>
+
