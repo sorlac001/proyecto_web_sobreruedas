@@ -65,13 +65,13 @@
           <a href="#organizacion">LA ORGANIZACIÓN</a>
         </li>
         <li>
-          <a href="#deportes">deportes</a>
+          <a href="#deportes">DEPORTES</a>
         </li>
         <li>
-          <a href="#alianzas">ALIANZAS</a>
+          <a href="login.php">INICIA SESIÓN</a>
         </li>
         <li>
-          <a href="#donar">¿CÓMO AYUDAR?</a>
+          <a href="registro.php">REGISTRATE</a>
         </li>
       </ul>
     </div><!--/.nav-collapse -->
@@ -171,47 +171,7 @@
             </div>
       </div>
     </div>
-
-    <!-- Alianzas -->
-    <div id="alianzas" class="row contenedor-alianzas">
-      <div class="col-md-12">
-        <div class="page-header">
-          <h1>Alianzas</h1>
-        </div>
-      </div>
-      <div class="col-md-12">
-        <p>
-          Discapacitados Visuales IAP, participa desde hace varios años en una serie de foros y equipos de trabajo nacionales e internacionales abordando distintos aspectos del desarrollo de las personas con discapacidad visual; estamos convencidos de que la articulación de acciones entre las distintas organizaciones de y para personas con esta condición de vida, proporcionarán la fuerza necesaria para lograr mayor impacto en nuestros programas y deportes.
-        </p>
-      </div>
-      
-      <div class="col-md-11 col-md-offset-1 content-cita">
-        <h3>
-          Coalición por los Derechos de las Personas con Discapacidad. (COAMEX)
-        </h3>
-        <p>
-          Desde el año 2011 participamos activamente en la Coalición por los Derechos de las Personas con Discapacidad. COAMEX
-          está integrada por seis reconocidas organizaciones de la sociedad civil: CONFE, Libre Acceso, Kadima, Voz Pro Salud Mental,
-          Iluminemos de Azul y nuestra institución.
-
-          El trabajo de COAMEX se centra en la elaboración de un informe alternativo al que presenta el estado mexicano, sobre la imple-
-          mentación de la Convención sobre los Derechos de las Personas con Discapacidad de Naciones Unidas en México. 
-        </p>
-      </div>
-    </div>
-
-    <!-- Donativos -->
-    <div id="donar" class="row contenedor-donativos">
-      <div class="col-md-7 text-center">
-        <h3>¿Quieres sumarte a nuestra causa?</h3>
-      </div>
-      <div class="col-md-5 text-center">
-        <a role="button" href="./donar.html" class="btn btn-primario">Donar</a>
-      </div>
-    </div>
-
-
-
+    
   </div>
 </section>
 
@@ -220,16 +180,15 @@
 
   <div class="footer-superior">
     <div class="container f-superior">
-      
       <div class="row">
         <div class="col-md-6">
           <h3>Contacto</h3>
           <a class="contacto-enlace" href="tel: //55194512" aria-label="contáctenos al teléfono +52 55 19 45 12">(55)55194512</a>
-          <br>
+          <br />
           <a class="contacto-enlace" href="tel: //55383010" aria-label="contáctenos al teléfono +52 55 38 30 10">(55)55383010</a>
-          <br>
-          <br>
-          <a class="contacto-enlace" href="mailto:patriciahernandez.discapacitaodvisualesiap@yahoo.com.mx" aria-label="escribanos al correo e lectrónico patriciahernandez.discapacitaodvisualesiap@yahoo.com.mx">patriciahernandez.discapacitaodvisualesiap@yahoo.com.mx</a>
+          <br />
+          <br />
+          <a class="contacto-enlace" href="mailto:patriciahernandez.discapacitaodvisualesiap@yahoo.com.mx">contacto@sobreruedas.com</a>
         </div>
         <div class="col-md-6 text-right">
           <img src="./img/japdf.png" class="img-footer" alt="Junta de Asistencia Privada del Distrito Federal">
