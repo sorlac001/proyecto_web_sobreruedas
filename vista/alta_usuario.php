@@ -94,9 +94,9 @@
           </div>
           <div class="form-group">
             <label for="contrasena">Tipo de usuario</label><br/>
-            <input type="radio" class="form-control" id="idTipoUsuario" name="idTipoUsuario" placeholder="Tipo de usuario"  value="1" required/>Administrador<br/>
-            <input type="radio" class="form-control" id="idTipoUsuario" name="idTipoUsuario" placeholder="Tipo de usuario"  value="2" required/>Ventas<br/>
-            <input type="radio" class="form-control" id="idTipoUsuario" name="idTipoUsuario" placeholder="Tipo de usuario"  value="3" required/>Cliente<br/>
+            <input type="radio" class="form-control" id="idTipoUsuario" name="idTipoUsuario" placeholder="Tipo de usuario"  value="1" required/>Administrador
+            <input type="radio" class="form-control" id="idTipoUsuario" name="idTipoUsuario" placeholder="Tipo de usuario"  value="2" required/>Ventas
+            <input type="radio" class="form-control" id="idTipoUsuario" name="idTipoUsuario" placeholder="Tipo de usuario"  value="3" required/>Cliente
           </div>
 
 
