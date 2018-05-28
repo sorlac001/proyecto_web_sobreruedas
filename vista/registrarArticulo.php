@@ -67,7 +67,7 @@
                     <div class="form-row">
                         <div class="form-group col-4">
                             <label for="nombre">Nombre</label>
-                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre de la mochila" required>
+                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Casco camuflaje" required>
                         </div>
                         <div class="form-group">
                             <label for="id_marca">Marca</label>
