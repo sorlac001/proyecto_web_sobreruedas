@@ -182,19 +182,20 @@
 </section>
 
 <footer>
-  <div class="footer-superior">
+   <div class="footer-superior">
     <div class="container f-superior">
       <div class="row">
         <div class="col-md-6">
-          <h3>CONTACTO</h3>
-          <a class="contacto-enlace" href="tel: //55194512">(55)55194512</a>
-          <br />
-          <a class="contacto-enlace" href="tel: //55383010">(55)55383010</a>
-          <br />
-          <br />
+          <h3>Créditos</h3>
+          <p>Daniela Camacho Garduño</p>
+          <p>García Martínez Carlos Armando</p>
           <a class="contacto-enlace" href="mailto:contacto@sobreruedas.com">contacto@sobreruedas.com</a>
         </div>
+        <div class="col-md-6 text-right">
+          <img src="../img/japdf.png" class="img-footer" alt="Junta de Asistencia Privada del Distrito Federal">
+        </div>
       </div>
+
     </div>
   </div>
   <div class="footer-inferior">
