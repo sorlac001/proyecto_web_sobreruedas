@@ -93,10 +93,10 @@
             <input type="password" class="form-control" id="contrasena" name="contrasena" placeholder="contrasenia" required/>
           </div>
           <div class="form-group">
-            <label for="contrasena">Tipo de usuario</label><br/>
-            <input type="radio" class="form-control" id="idTipoUsuario" name="idTipoUsuario" placeholder="Tipo de usuario"  value="1" required/>Administrador
-            <input type="radio" class="form-control" id="idTipoUsuario" name="idTipoUsuario" placeholder="Tipo de usuario"  value="2" required/>Ventas
-            <input type="radio" class="form-control" id="idTipoUsuario" name="idTipoUsuario" placeholder="Tipo de usuario"  value="3" required/>Cliente
+            <label for="idTipoUsuario">Tipo de usuario</label><br/>
+            <label for="idTipoUsuario">Administrador</label><br/>            <input type="radio" class="form-control" id="idTipoUsuario" name="idTipoUsuario" placeholder="Tipo de usuario"  value="1" required/>
+            <label for="idTipoUsuario">Ventas</label><br/><input type="radio" class="form-control" id="idTipoUsuario" name="idTipoUsuario" placeholder="Tipo de usuario"  value="2" required/>
+            <label for="idTipoUsuario">Cliente</label><br/>            <input type="radio" class="form-control" id="idTipoUsuario" name="idTipoUsuario" placeholder="Tipo de usuario"  value="3" required/>
           </div>
 
 
