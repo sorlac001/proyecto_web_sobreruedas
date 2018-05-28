@@ -88,7 +88,7 @@ CREATE TABLE articulo (
 CREATE TABLE formaPago
 (
 	idFormaPago	serial	NOT NULL,
-	topo		CHAR(1)	NOT NULL,
+	tipo		CHAR(1)	NOT NULL,
 	PRIMARY KEY (idFormaPago)
 );
 
@@ -164,5 +164,5 @@ INSERT INTO categoria(nombre, idDeporte) VALUES('derby', 3);
 INSERT INTO categoria(nombre, idDeporte) VALUES('motocross', 4);
 INSERT INTO categoria(nombre, idDeporte) VALUES('supermoto', 4);
 
-INSERT INTO tipoUsuario(tipo) VALUES('T');
-INSERT INTO tipoUsuario(tipo) VALUES('E');
+INSERT INTO formaPago(tipo) VALUES('T');
+INSERT INTO formaPago(tipo) VALUES('E');
