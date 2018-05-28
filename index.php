@@ -48,35 +48,31 @@
     </div>
   </div>
 </div>
+<!-- Barra de navegación -->
+<nav class="navbar container navbar-iap">
 
-<nav class="navbar ">
-  <div class="container navbar-iap">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-        <span class="sr-only">Menú</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
     <div id="navbar" class="collapse navbar-collapse">
-      <ul class="nav navbar-nav navbar-right navbar-menu-iap">
-        <li>
-          <a href="#organizacion">LA ORGANIZACIÓN</a>
-        </li>
-        <li>
-          <a href="#deportes">DEPORTES</a>
-        </li>
-        <li>
-          <a href="login.php">INICIA SESIÓN</a>
-        </li>
-        <li>
-          <a href="registro.php">REGISTRATE</a>
-        </li>
-      </ul>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="col-7"></div>
+					<div class="collapse navbar-collapse justify-content-end" id="navbar">
+						<ul class="navbar-nav mr-auto">
+							<li class="nav-item active">
+								<a class="nav-link" href="#">Carrito</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Artículos</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="autenticar.php">Ingresar</a>
+							</li>
+						</ul>
+					</div>
     </div><!--/.nav-collapse -->
-  </div>
+
 </nav>
+<!-- Barra de navegación -->
 
 
 
@@ -110,28 +106,22 @@
     <div id="organizacion" class="row contenedor-organizacion">
       <div class="col-md-7 col-md-offset-4">
         <div class="page-header">
-          <h1>¿Quienes somos?</h1>
+          <h1>Sobre Ruedas</h1>
         </div>
       </div>
       <div class="col-md-4 text-center">
         <img src="./img/logo_min.png" class="img-lateral" alt="">
       </div>
       <div class="col-md-7">
-        
+        <h2>¿Quienes somos?</h2>
         <p>
-          "SobreRuedas" es una empresa mexicana amante de los deportes extremos y comprometida con traer a nuestros clientes productos de la más alta calidad que los acompañen en sus aventuras día con día, por que sabemos que sobre ruedas no hay límites.
+          “Sobre ruedas” es una empresa mexicana de nueva creación dedicada a comercializar productos diseñados para asistir a deportistas apasionados que necesitan accesorios que los acompañen en sus aventuras del día a día
+		  <br>
           <br>
+          Esta empresa es amante de los deportes extremos y está comprometida con traer a sus clientes productos de la más alta calidad, por que sabemos que sobre ruedas no hay límites.
+		  <br>
           <br>
-          Su fundación respondió a la necesidad de disponer de deportes de apoyo a la educación y rehabilitación de las personas con
-          discapacidad visual en la Ciudad de México. Sus primeros deportes fueron la Escuela Secundaria No. 51 “Antonio Vicente
-          Mosquete” y el Centro de Atención Múltiple No. 50 que ofrecían atención educativa a estudiantes con discapacidad visual, así
-          también fuimos cofundadores de la Escuela para Entrenamiento de Perros Guía de México.
-          <br>
-          <br>
-          Nuestra organización fue creada por un visionario grupo de personas comprometidas con el desarrollo de las personas con
-          discapacidad visual encabezadas por Ignacio León Robles Robles quién fue, entre otras cosas: administrador de empresas,
-          matemático, docente, escritor, activista, líder social, promotor del respeto de los derechos de las personas con discapacidad,
-        </p>
+			</p>
       </div>
     </div>
 
@@ -145,33 +135,38 @@
       <div class="col-md-12">
           <div class="row ">
               <div class="col-md-6 ">
-                <a href="./accesibilidad.html" class="img-servicio-access text-center">
+                <a href="./accesibilidad.html" class="img-servicio-access patinaje text-center">
                   <h2>Patinaje</h2>
                 </a>
               </div>
 
               <div class="col-md-6">
-                <a href="./capacitacion.html" class="img-servicio-access text-center">
+                <a href="./capacitacion.html" class="img-servicio-access skate text-center">
                   <h2>Skateboard</h2>
                 </a>
               </div>
           </div>
           <div class="row separador">
               <div class="col-md-6">
-                <a href="./imprenta.html" class="img-servicio-access text-center">
+                <a href="./imprenta.html" class="img-servicio-access moto text-center">
                   <h2>Motociclismo</h2>
                 </a>
               </div>
 
               <div class="col-md-6">
-                <a href="./libro.html" class="img-servicio-access text-center">
+                <a href="./libro.html" class="img-servicio-access bici text-center">
                   <h2>Ciclismo</h2>
                 </a>
               </div>
             </div>
       </div>
     </div>
-    
+
+
+
+
+
+
   </div>
 </section>
 
@@ -180,16 +175,13 @@
 
   <div class="footer-superior">
     <div class="container f-superior">
+      
       <div class="row">
         <div class="col-md-6">
-          <h3>Contacto</h3>
-          <a class="contacto-enlace" href="tel: //55194512" aria-label="contáctenos al teléfono +52 55 19 45 12">(55)55194512</a>
-          <br />
-          <a class="contacto-enlace" href="tel: //55383010" aria-label="contáctenos al teléfono +52 55 38 30 10">(55)55383010</a>
-          <br />
-          <br />
-          <a class="contacto-enlace" href="mailto:patriciahernandez.discapacitaodvisualesiap@yahoo.com.mx">contacto@sobreruedas.com</a>
-        </div>
+			<h3>Créditos</h3>
+				<p>Daniela Camacho Garduño</p>
+				<p>García Martínez Carlos Armando</p>  
+		</div>
         <div class="col-md-6 text-right">
           <img src="./img/japdf.png" class="img-footer" alt="Junta de Asistencia Privada del Distrito Federal">
         </div>
@@ -205,7 +197,7 @@
 
           <div class="btn-toolbar " role="toolbar" aria-label="Redes sociales">
             <div class="btn-group btn-social" role="group" aria-label="Facebook">
-              <a href="#face"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.facebook.com/Sobre-Ruedas-172691316705792/"><i class="fab fa-facebook-f"></i></a>
             </div>
             <div class="btn-group btn-social" role="group" aria-label="Twitter">
               <a href="#face"><i class="fab fa-twitter"></i></a>
