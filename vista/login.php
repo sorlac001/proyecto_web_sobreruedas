@@ -80,46 +80,44 @@
 </section>
 
 <footer>
-  <div class="footer-superior">
+   <div class="footer-superior">
     <div class="container f-superior">
       <div class="row">
         <div class="col-md-6">
-          <h3>Contacto</h3>
-          <a class="contacto-enlace" href="tel: //55194512" aria-label="contáctenos al teléfono +52 55 19 45 12">(55)55194512</a>
-          <br />
-          <a class="contacto-enlace" href="tel: //55383010" aria-label="contáctenos al teléfono +52 55 38 30 10">(55)55383010</a>
-          <br />
-          <br />
-          <a class="contacto-enlace" href="mailto:patriciahernandez.discapacitaodvisualesiap@yahoo.com.mx">contacto@sobreruedas.com</a>
+          <h3>Créditos</h3>
+          <p>Daniela Camacho Garduño</p>
+          <p>García Martínez Carlos Armando</p>
+          <a class="contacto-enlace" href="mailto:contacto@sobreruedas.com">contacto@sobreruedas.com</a>
+        </div>
+        <div class="col-md-6 text-right">
+          <img src="../img/japdf.png" class="img-footer" alt="Junta de Asistencia Privada del Distrito Federal">
         </div>
       </div>
+
     </div>
   </div>
   <div class="footer-inferior">
     <div class="container f-inferior">
       <div class="row">
         <div class="col-md-2 col-md-offset-10 text-right">
-
           <div class="btn-toolbar " role="toolbar" aria-label="Redes sociales">
             <div class="btn-group btn-social" role="group" aria-label="Facebook">
-              <a href="https://www.facebook.com/S0breRuedas/"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.facebook.com/Sobre-Ruedas-172691316705792/?modal=admin_todo_tour"><i class="fab fa-facebook-f"></i></a>
             </div>
             <div class="btn-group btn-social" role="group" aria-label="Twitter">
-              <a href=""><i class="fab fa-twitter"></i></a>
-            </div>
-            <div class="btn-group btn-social" role="group" aria-label="Whatsapp">
-              <a href="#face"><i class="fab fa-whatsapp"></i></a>
+              <a href="https://twitter.com/submaro_77"><i class="fab fa-twitter"></i></a>
             </div>
             <div class="btn-group btn-social" role="group" aria-label="Instagram">
-              <a href="#face"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.instagram.com/carlos_garcia_up/"><i class="fab fa-instagram"></i></a>
             </div>
           </div>
-
         </div>
       </div>
     </div>
   </div>
 </footer>
+  
+  
 <script src="../common/jquery/jquery-3.3.1.js"></script>
 <script src="../common/js/bootstrap.min.js"></script>
 <script src="../common/js/main.js"></script>
