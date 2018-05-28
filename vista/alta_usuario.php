@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
   <head>
     <meta charset="utf-8">
@@ -92,6 +92,14 @@
             <label for="contrasena">Contrase&ntilde;a</label>
             <input type="password" class="form-control" id="contrasena" name="contrasena" placeholder="contrasenia" required/>
           </div>
+          <div class="form-group">
+            <label for="contrasena">Tipo de usuario</label><br/>
+            <input type="radio" class="form-control" id="idTipoUsuario" name="idTipoUsuario" placeholder="Tipo de usuario"  value="1" required/>Administrador<br/>
+            <input type="radio" class="form-control" id="idTipoUsuario" name="idTipoUsuario" placeholder="Tipo de usuario"  value="2" required/>Ventas<br/>
+            <input type="radio" class="form-control" id="idTipoUsuario" name="idTipoUsuario" placeholder="Tipo de usuario"  value="3" required/>Cliente<br/>
+          </div>
+
+
           <button type="submit" class="btn btn-carrusel" name="enviar">Enviar</button>
         </fieldset>
       </form>
