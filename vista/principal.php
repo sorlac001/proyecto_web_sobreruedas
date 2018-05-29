@@ -205,7 +205,7 @@
 					<div class="col-md-2 col-md-offset-10 text-right">
 						<div class="btn-toolbar " role="toolbar" aria-label="Redes sociales">
 							<div class="btn-group btn-social" role="group" aria-label="Facebook">
-								<a href="https://www.facebook.com/Sobre-Ruedas-172691316705792/?modal=admin_todo_tour"><i class="fab fa-facebook-f"></i></a>
+								<a href="https://www.facebook.com/mxsobreruedas/"><i class="fab fa-facebook-f"></i></a>
 							</div>
 							<div class="btn-group btn-social" role="group" aria-label="Twitter">
 								<a href="https://twitter.com/submaro_77"><i class="fab fa-twitter"></i></a>
