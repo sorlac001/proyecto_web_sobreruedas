@@ -1,14 +1,13 @@
-CREATE USER adminbase with encrypted password 'danngarcam0911';
 CREATE USER admintienda with encrypted password 'danngarcam0911';
 CREATE USER ventatienda with encrypted password 'sorlac3123';
 CREATE USER clientetienda with encrypted password 'contra1234';
 
 
-CREATE DATABASE sobreruedas OWNER adminbase;
+CREATE DATABASE sobreruedas OWNER admintienda;
 
 \q
 
-psql -h 127.0.0.1 -U adminbase -d sobreruedas
+psql -h 127.0.0.1 -U admintienda -d sobreruedas
 
 CREATE TABLE tipoUsuario (
 	idTipoUsuario 	serial 	NOT NULL,
@@ -27,14 +26,16 @@ CREATE TABLE usuario (
 	contrasena		VARCHAR(30)	NOT NULL,
 	idTipoUsuario	serial		NOT NULL,
 	PRIMARY KEY (idUsuario),
-	FOREIGN KEY (idTipoUsuario) REFERENCES tipoUsuario (idTipoUsuario)
+	FOREIGN KEY (idTipoUsuario) REFERENCES tipoUsuario (idTipoUsuario),
+	UNIQUE (usuario),
+	UNIQUE (contrasena)
 );
 
 CREATE TABLE direccion (
 	idDireccion	serial		NOT NULL,
-	calle		VARCHAR(30)	NOT NULL,
-	numExterior	VARCHAR(4)	NOT NULL,
-	colonia		VARCHAR(20)	NOT NULL,
+	calle		VARCHAR(100)	NOT NULL,
+	numExterior	VARCHAR(10)	NOT NULL,
+	colonia		VARCHAR(100)	NOT NULL,
 	codPostal	CHAR(5)		NOT NULL,
 	idUsuario	serial		NOT NULL,
 	PRIMARY KEY (idDireccion),
@@ -166,3 +167,7 @@ INSERT INTO categoria(nombre, idDeporte) VALUES('supermoto', 4);
 
 INSERT INTO formaPago(tipo) VALUES('T');
 INSERT INTO formaPago(tipo) VALUES('E');
+
+INSERT INTO usuario(nombre, aPaterno, aMaterno, correo, telefono, usuario, contrasena, idTipoUsuario) VALUES('Daniela', 'Camacho', 'Garduño', 'soy.donny@gmail.com', '5518377330', 'DannGarcam', 'ilovepancer', 1);
+INSERT INTO usuario(nombre, aPaterno, aMaterno, correo, telefono, usuario, contrasena, idTipoUsuario) VALUES('Carlos', 'Garcia', 'Martinez', 'carlos.cg242@gmail.com', '5540318268', 'sorlac001', 'carlos3123', 2);
+INSERT INTO usuario(nombre, aPaterno, aMaterno, correo, telefono, usuario, contrasena, idTipoUsuario) VALUES('Andre Ricardo', 'Padilla', 'Guevara', 'nomeacuerdo@gmail.com', '551122344', 'omegaSalud', '1000house', 3);

@@ -6,31 +6,30 @@
 <html lang="es">
   <head>
     <?php
-    include 'links.php';
+      include 'links.php'
     ?>
-    <title>Articulo</title>
+    <title>Catalogo de articulos</title>
   </head>
 
 <body>
+
 <?php
-include'encabezado.php';
+  include 'encabezado.php'
 ?>
+
 <nav class="navbar ">
-  <div class="container navbar-iap">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-        <span class="sr-only">Menú</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
-    <div id="navbar" class="collapse navbar-collapse">
+        <div class="container navbar-iap">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Menú</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right navbar-menu-iap">
               <li><a href="principal.php">INICIO</a></li>
-              <li class="nav-item">
-                <a class="nav-link" href="catalogoArticulo.php">VER ARTICULOS</a>
-              </li>
               <?php 
                 switch($tipoUsuario){
                   /*ADMINISTRADOR*/
@@ -86,44 +85,51 @@ include'encabezado.php';
                 }
               ?>
             </ul>
-          </div>3123<!--/.nav-collapse -->
-  </div>
-</nav>
+          </div>
+        </div>
+      </nav>
+      <!-- Fin barra de navegación -->
 
 <!-- Begin page content -->
 <section class="contenido-principal">
   <div class="container cont-white">
-    
-            <main>
-                <div class="row">
-                    <?php
-                        $articulo = $_GET["articulo"];
-                        include '../model/conexion.php';
-                        $con = conectar();
-                        $query=("SELECT * FROM articulo WHERE idarticulo = $articulo");
-                        $res=pg_query($con,$query);
-                        while ($f=pg_fetch_array($res)) {
-                        ?>
-                            <div class="col-3">
-                                <img class="imagenarticulo" src="../img/<?php echo $f['imagen'];?>"/><br>
-                                <a href="articulo.php?articulo=<?php echo $f['idarticulo']?>"><?php echo $f['nombre'];?></a><br>
-                            </div>
-                    <?php
-                        }
-                    ?>
-                </div>
-            </main>
-
-
+    <main>
+      <div class="row">
+        <?php
+        include '../modelo/conexion.php';
+        $con = conectar();
+        $query=("SELECT imagen,nombre, descripcion, idarticulo FROM articulo");
+        $res=pg_query($con,$query);
+        while ($f=pg_fetch_array($res)) {
+        ?>
+        <div class="productoArticulo col-4">
+          <div class="card">
+            <img class="card-img-top" src="../img/<?php echo $f['imagen'];?>" alt=""/>
+            <div class="card-body">
+              <h5 class="card-title"><?php echo $f['nombre']?></h5>
+              <p class="card-text"><?php echo $f['descripcion']?></p>
+              <a href="articulo.php?articulo=<?php echo $f['idarticulo']?>" class="btn btn-darck">Detalles</a>
+            </div>
+          </div>
+        </div>
+        <?php
+        }
+        ?>
+      </div>
+    </main>
   </div>
 </section>
-
 <?php
-include 'footer.php'
+  include 'footer.php'
 ?>
-  
 <script src="../common/jquery/jquery-3.3.1.js"></script>
 <script src="../common/js/bootstrap.min.js"></script>
 <script src="../common/js/main.js"></script>
 </body>
 </html>
+
+
+
+
+
+

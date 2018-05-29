@@ -5,37 +5,17 @@
 <!DOCTYPE html>
 <html lang="es">
 	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="">
-		<meta name="author" content="HearColors - UNAM">
-		<link rel="icon" href="../../../favicon.ico">
-		<link rel="stylesheet" href="../common/css/main.css"/>
-		<link href="../common/css/bootstrap.min.css" rel="stylesheet">
-		<link href="../common/css/fa-svg-with-js.css" rel="stylesheet">
-		<link href="../common/css/main.css" rel="stylesheet">
-		<script src="../common/js/fontawesome-all.min.js"></script>
+		<?php
+		include 'links.php'
+		?>
 		<title>Inicio | SobreRuedas</title>
 	</head>
 	<body>
 	
 	<!-- Encabezado -->
-		<header>	
-			<div class="container cont-white">
-				<div class="row contenedor-superior">
-					<div class="col-md-6">
-						<a href="index.php" aria-label="ir a la pagina de inicio"><img class="img-responsive img-logo" src="../img/logo.png"></a>
-					</div>
-					<div class="col-md-6 text-right contenedor-letras">
-						<div class="btn-group" role="group" aria-label="...">
-							<button class="btn btn-letra btn_aumento_letra" type="button" aria-live="assertive" aria-describedby="desc_letra" role="alert" aria-label="Aumento de letra">A+</button>
-							<button class="btn btn-letra btn_decremento_letra" type="button" aria-live="assertive" aria-describedby="desc_letra" role="alert" aria-label="Decremento de letra">A-</button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</header>
+		<?php
+		include 'encabezado.php'
+		?>
 	<!-- Fin encabezado -->			
 	
 			<!-- Barra de navegación -->
@@ -57,7 +37,7 @@
 							  	/*ADMINISTRADOR*/
 								case 1: echo '
 								  <li class="nav-item">
-									<a class="nav-link" href="gestionararticulo.php">GESTIONAR ARTICULOS</a>
+									<a class="nav-link" href="gestionarArticulo.php">GESTIONAR ARTICULOS</a>
 								  </li>
 								  <li class="nav-item">
 									<a class="nav-link" href="gestionarUsuario.php">GESTIONAR USUARIOS</a>
@@ -72,7 +52,7 @@
 								/*VENTA*/  
 								case 2: echo '
 								  <li class="nav-item">
-									<a class="nav-link" href="gestionararticulo.php">GESTIONAR ARTICULOS</a>
+									<a class="nav-link" href="gestionarArticulo.php">GESTIONAR ARTICULOS</a>
 								  </li>
 								  <li class="nav-item">
 									<a class="nav-link" href="gestionarMarca.php">GESTIONAR MARCAS</a>
@@ -101,10 +81,13 @@
 								/*SIN REGISTRO*/
 								default: echo '
 								  <li class="nav-item">
+									<a class="nav-link" href="catalogoArticulo.php">VER ARTICULOS</a>
+								  </li>
+								  <li class="nav-item">
 									<a class="nav-link" href="login.php">INICIAR SESIÓN</a>
 								  </li>
 								  <li class="nav-item">
-									<a class="nav-link" href="registro.php">REGISTRATE</a>
+									<a class="nav-link" href="altaUsuario.php">REGISTRATE</a>
 								  </li>';
 								  break;
 							  }

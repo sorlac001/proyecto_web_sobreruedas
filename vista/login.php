@@ -1,37 +1,17 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="HearColors - UNAM">
-    <link rel="icon" href="../../../favicon.ico">
-    <link rel="stylesheet" href="../common/css/main.css"/>
-    <link href="../common/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../common/css/fa-svg-with-js.css" rel="stylesheet">
-    <link href="../common/css/main.css" rel="stylesheet">
-    <script src="../common/js/fontawesome-all.min.js"></script>
-    <title>Inicio | SobreRuedas</title>
+    <?php
+    include 'links.php'
+    ?>
+    <title>INICIO SESIÓN</title>
   </head>
 
 <body>
 
-<div class="container cont-white">
-  <div class="row contenedor-superior">
-    <div class="col-md-6">
-      <a href="index.php" aria-label="ir a la pagina de inicio"><img class="img-responsive img-logo" src="../img/logo.png"></a>
-    </div>
-    <div class="col-md-6 text-right contenedor-letras">
-      
-      <div class="btn-group" role="group" aria-label="...">
-        <button class="btn btn-letra btn_aumento_letra" type="button" aria-live="assertive" aria-describedby="desc_letra" role="alert" aria-label="Aumento de letra">A+</button>
-        <button class="btn btn-letra btn_decremento_letra" type="button" aria-live="assertive" aria-describedby="desc_letra" role="alert" aria-label="Decremento de letra">A-</button>
-      </div>
-
-    </div>
-  </div>
-</div>
+<?php 
+include 'encabezado.php'
+?>
 
 <nav class="navbar ">
   <div class="container navbar-iap">
@@ -49,7 +29,7 @@
           <a href="principal.php">PAGINA PRINCIPAL</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="../registro.php">REGISTRATE</a>
+          <a class="nav-link" href="altaUsuario.php">REGISTRATE</a>
         </li>
       </ul>
     </div><!--/.nav-collapse -->
@@ -61,61 +41,29 @@
   <div class="container cont-white">
     <!-- FORMULARIO -->
     <div id="FORMULARIO" class="row contenedor-formulario">
-      <form class="needs-validation" action="../controlador/autenticar.php" method="post">
-        <fieldset>
-          <legend class="centro">INICIAR SESI&Oacute;N</legend>
-          <div class="form-group">
-            <label for="usuario">Usuario</label>
-            <input type="text" class="form-control" id="usuario" name="usuario" placeholder="usuario" required/>
-          </div>
-          <div class="form-group">
-            <label for="contrasena">Contrase&ntilde;a</label>
-            <input type="password" class="form-control" id="contrasena" name="contrasena" placeholder="contrasenia" required/>
-          </div>
-          <button type="submit" class="btn btn-carrusel" name="enviar">Enviar</button>
-        </fieldset>
-      </form>
+      <div class="col-md-offset-3 col-md-6">
+        <form class="needs-validation" action="../controlador/autenticar.php" method="post">
+          <fieldset>
+            <legend class="centro">INICIAR SESI&Oacute;N</legend>
+            <div class="form-group">
+              <label for="usuario">Usuario</label>
+              <input type="text" class="form-control" id="usuario" name="usuario" placeholder="usuario" required/>
+            </div>
+            <div class="form-group">
+              <label for="contrasena">Contrase&ntilde;a</label>
+              <input type="password" class="form-control" id="contrasena" name="contrasena" placeholder="contrasenia" required/>
+            </div>
+            <button type="submit" class="btn btn-carrusel col-md-offset-5 col-md-2" name="enviar">Enviar</button>
+          </fieldset>
+        </form>
+      </div>
     </div>    
   </div>
 </section>
 
-<footer>
-   <div class="footer-superior">
-    <div class="container f-superior">
-      <div class="row">
-        <div class="col-md-6">
-          <h3>Créditos</h3>
-          <p>Daniela Camacho Garduño</p>
-          <p>García Martínez Carlos Armando</p>
-          <a class="contacto-enlace" href="mailto:contacto@sobreruedas.com">contacto@sobreruedas.com</a>
-        </div>
-        <div class="col-md-6 text-right">
-          <img src="../img/japdf.png" class="img-footer" alt="Junta de Asistencia Privada del Distrito Federal">
-        </div>
-      </div>
-
-    </div>
-  </div>
-  <div class="footer-inferior">
-    <div class="container f-inferior">
-      <div class="row">
-        <div class="col-md-2 col-md-offset-10 text-right">
-          <div class="btn-toolbar " role="toolbar" aria-label="Redes sociales">
-            <div class="btn-group btn-social" role="group" aria-label="Facebook">
-              <a href="https://www.facebook.com/Sobre-Ruedas-172691316705792/?modal=admin_todo_tour"><i class="fab fa-facebook-f"></i></a>
-            </div>
-            <div class="btn-group btn-social" role="group" aria-label="Twitter">
-              <a href="https://twitter.com/submaro_77"><i class="fab fa-twitter"></i></a>
-            </div>
-            <div class="btn-group btn-social" role="group" aria-label="Instagram">
-              <a href="https://www.instagram.com/carlos_garcia_up/"><i class="fab fa-instagram"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
+<?php
+include 'footer.php'
+?>
   
   
 <script src="../common/jquery/jquery-3.3.1.js"></script>
