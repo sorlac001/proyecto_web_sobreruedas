@@ -1,3 +1,7 @@
+<?php
+	session_start();
+	$tipoUsuario = $_SESSION['tipoUsuario'];
+?>
 <!DOCTYPE html>
 <html lang="es">
 	<head>
@@ -48,23 +52,18 @@
 					<div id="navbar" class="collapse navbar-collapse">
 						<ul class="nav navbar-nav navbar-right navbar-menu-iap">
 							<li><a href="#organizacion">LA ORGANIZACIÓN</a></li>
-							<li><a href="#deportes">DEPORTES</a></li>
 							<?php 
 							  switch($tipo_usuario){
+							  	/*ADMINISTRADOR*/
 								case 1: echo '
 								  <li class="nav-item">
-									<a class="nav-link" href="#">CARRITO</a>
+									<a class="nav-link" href="gestionararticulos.php">GESTIONAR ARTICULOS</a>
 								  </li>
-								  <li class="nav-item dropdown">
-									<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cuenta</a>
-									<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-									  <a class="dropdown-item" href="#">MIS DATOS</a>
-									  <a class="dropdown-item" href="compras.php">MIS COMPRAS</a>
-									  <a class="dropdown-item" href="../control/cerrarSesion.php">CERRAR SESI&Oacute;N</a>
-									</div>
+								  <li class="nav-item">
+									<a class="nav-link" href="../control/cerrarSesion.php">CERRAR SESI&Oacute;N</a>
 								  </li>';
 								  break;
-								  
+								/*VENTA*/  
 								case 2: echo '
 								  <li class="nav-item">
 									<a class="nav-link" href="administracion.php">USUARIOS</a>
@@ -76,14 +75,21 @@
 									<a class="nav-link" href="../control/cerrarSesion.php">CERRAR SESI&Oacute;N</a>
 								  </li>';
 								  break;
+								/*CLIENTE*/
 								case 3: echo '
 								  <li class="nav-item">
-									<a class="nav-link" href="gestionararticulos.php">GESTIONAR ARTICULOS</a>
+									<a class="nav-link" href="#">CARRITO</a>
 								  </li>
-								  <li class="nav-item">
-									<a class="nav-link" href="../control/cerrarSesion.php">CERRAR SESI&Oacute;N</a>
+								  <li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cuenta</a>
+									<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+									  <a class="dropdown-item" href="#">MIS DATOS</a>
+									  <a class="dropdown-item" href="compras.php">MIS COMPRAS</a>
+									  <a class="dropdown-item" href="../control/cerrarSesion.php">CERRAR SESI&Oacute;N</a>
+									</div>
 								  </li>';
 									break;
+								/*SIN REGISTRO*/
 								default: echo '
 								  <li class="nav-item">
 									<a class="nav-link" href="login.php">INICIAR SESIÓN</a>
@@ -99,9 +105,6 @@
 				</div>
 			</nav>
 			<!-- Fin barra de navegación -->
-
-
-
 	<!-- Contenido principal -->
 	<section class="contenido-principal">
 		<div class="container cont-white">
@@ -151,74 +154,14 @@
 			  </div>
 			</div>
 		<!-- Fin La organización -->
-		
-		<!-- Clasificación/deportes -->
-			<div id="deportes" class="row contenedor-deportes">
-				<div class="col-md-12 text-center">
-					<h1 class="title_white">Deportes</h1>
-				</div>
-				<div class="col-md-12">
-					<div class="row ">
-						<div class="col-md-6 ">
-							<a href="./accesibilidad.html" class="img-servicio-access patinaje text-center"><h2>Patinaje</h2></a>
-						</div>
-						<div class="col-md-6">
-							<a href="./capacitacion.html" class="img-servicio-access skate text-center"><h2>Skateboard</h2></a>
-						</div>
-					</div>
-					<div class="row separador">
-						<div class="col-md-6">
-							<a href="./imprenta.html" class="img-servicio-access moto text-center"><h2>Motociclismo</h2></a>
-						</div>
-						<div class="col-md-6">
-							<a href="./libro.html" class="img-servicio-access bici text-center"><h2>Ciclismo</h2></a>
-						</div>
-					</div>
-				</div>
-			</div>
-		<!--Fin Clasificación/deportes -->
-		
 		</div>
 	</section>
 	<!-- FinContenido principal -->	
 	
 <!-- Pie -->
-	<footer>
-	   <div class="footer-superior">
-			<div class="container f-superior">
-				<div class="row">
-					<div class="col-md-6">
-						<h3>Créditos</h3>
-						<p>Daniela Camacho Garduño</p>
-						<p>García Martínez Carlos Armando</p>
-						<a class="contacto-enlace" href="mailto:contacto@sobreruedas.com">contacto@sobreruedas.com</a>
-					</div>
-					<div class="col-md-6 text-right">
-						<img src="../img/japdf.png" class="img-footer" alt="Junta de Asistencia Privada del Distrito Federal">
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="footer-inferior">
-			<div class="container f-inferior">
-				<div class="row">
-					<div class="col-md-2 col-md-offset-10 text-right">
-						<div class="btn-toolbar " role="toolbar" aria-label="Redes sociales">
-							<div class="btn-group btn-social" role="group" aria-label="Facebook">
-								<a href="https://www.facebook.com/Sobre-Ruedas-172691316705792/?modal=admin_todo_tour"><i class="fab fa-facebook-f"></i></a>
-							</div>
-							<div class="btn-group btn-social" role="group" aria-label="Twitter">
-								<a href="https://twitter.com/submaro_77"><i class="fab fa-twitter"></i></a>
-							</div>
-							<div class="btn-group btn-social" role="group" aria-label="Instagram">
-								<a href="https://www.instagram.com/carlos_garcia_up/"><i class="fab fa-instagram"></i></a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer>
+	<?php
+	include './footer.php'
+	?>
 <!-- Fin Pie -->
 <script src="../common/jquery/jquery-3.3.1.js"></script>
 <script src="../common/js/bootstrap.min.js"></script>
