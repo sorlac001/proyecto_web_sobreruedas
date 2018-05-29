@@ -53,30 +53,39 @@
 						<ul class="nav navbar-nav navbar-right navbar-menu-iap">
 							<li><a href="#organizacion">LA ORGANIZACIÓN</a></li>
 							<?php 
-							  switch($tipo_usuario){
+							  switch($tipoUsuario){
 							  	/*ADMINISTRADOR*/
 								case 1: echo '
 								  <li class="nav-item">
-									<a class="nav-link" href="gestionararticulos.php">GESTIONAR ARTICULOS</a>
+									<a class="nav-link" href="gestionararticulo.php">GESTIONAR ARTICULOS</a>
 								  </li>
 								  <li class="nav-item">
-									<a class="nav-link" href="../control/cerrarSesion.php">CERRAR SESI&Oacute;N</a>
+									<a class="nav-link" href="gestionarUsuario.php">GESTIONAR USUARIOS</a>
+								  </li>
+								  <li class="nav-item">
+									<a class="nav-link" href="gestionarMarca.php">GESTIONAR MARCAS</a>
+								  </li>
+								  <li class="nav-item">
+									<a class="nav-link" href="../controlador/logout.php">CERRAR SESI&Oacute;N</a>
 								  </li>';
 								  break;
 								/*VENTA*/  
 								case 2: echo '
 								  <li class="nav-item">
-									<a class="nav-link" href="administracion.php">USUARIOS</a>
+									<a class="nav-link" href="gestionararticulo.php">GESTIONAR ARTICULOS</a>
 								  </li>
 								  <li class="nav-item">
-									<a class="nav-link" href="gestionarMarcas.php">MARCAS</a>
+									<a class="nav-link" href="gestionarMarca.php">GESTIONAR MARCAS</a>
 								  </li>
 								  <li class="nav-item">
-									<a class="nav-link" href="../control/cerrarSesion.php">CERRAR SESI&Oacute;N</a>
+									<a class="nav-link" href="../controlador/logout.php">CERRAR SESI&Oacute;N</a>
 								  </li>';
 								  break;
 								/*CLIENTE*/
 								case 3: echo '
+								  <li class="nav-item">
+									<a class="nav-link" href="catalogoArticulo.php">VER ARTICULOS</a>
+								  </li>
 								  <li class="nav-item">
 									<a class="nav-link" href="#">CARRITO</a>
 								  </li>
@@ -85,7 +94,7 @@
 									<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 									  <a class="dropdown-item" href="#">MIS DATOS</a>
 									  <a class="dropdown-item" href="compras.php">MIS COMPRAS</a>
-									  <a class="dropdown-item" href="../control/cerrarSesion.php">CERRAR SESI&Oacute;N</a>
+									  <a class="dropdown-item" href="../controlador/logout.php">CERRAR SESI&Oacute;N</a>
 									</div>
 								  </li>';
 									break;
