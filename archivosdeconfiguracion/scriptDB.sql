@@ -2,7 +2,6 @@ CREATE USER admintienda with encrypted password 'danngarcam0911';
 CREATE USER ventatienda with encrypted password 'sorlac3123';
 CREATE USER clientetienda with encrypted password 'contra1234';
 
-
 CREATE DATABASE sobreruedas OWNER admintienda;
 
 \q
